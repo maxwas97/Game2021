@@ -15,8 +15,12 @@ _global_script_class_icons={
 [application]
 
 config/name="game"
-run/main_scene="res://scenes/Race_Track.tscn"
+run/main_scene="res://scenes/Race_Track2_1.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+CheckPointManager="*res://scenes/CheckPointManager.gd"
 
 [input]
 

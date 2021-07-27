@@ -31,6 +31,7 @@ func _physics_process(delta):
 	ball.add_central_force(-car_mesh.global_transform.basis.z * speed_input)
 	
 func _process(delta):
+	print( round($Ball.get_linear_velocity().length() * 15))
 	#cant steer/accelerate when in the air
 	if not ground_ray.is_colliding():
 		return
